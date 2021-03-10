@@ -1,0 +1,221 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+			<div class="col-md-9">
+				<div class="card card-body h-100 border-info">
+					<h4>Projects Page</h4>
+					<hr>
+					<p>These are unguided projects that I've worked on in my classes at Ohio State University. They cover over 
+					Cartography, Geovisualization, and ArcGIS Online. All of these results were through the ArcGIS Desktop suite, ArcGIS Online, and QGIS.</p>
+				</div>
+			</div>
+		</div>	
+
+		<hr>
+
+		<div class="col-md-15">
+			<div class="card card-body h-100 border-info">
+				<div class="bs-example">
+				
+					<!-- Nav Tabs -->
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="nav-item">
+							<a href="#home" class="nav-link active">Geovisualization</a>
+						</li>
+						<li class="nav-item">
+							<a href="#cartography" class="nav-link">Cartography</a>
+						</li>
+						<li class="nav-item">
+							<a href="#programming" class="nav-link">ArcGIS Online Projects</a>
+						</li>
+					</ul>
+					
+					
+					<!-- All Tab Content -->
+					<div class="tab-content">
+					
+						<!-- Geovisualization Tab-->
+						<div class="tab-pane fade show active" id="home">
+							<div class="accordion" id="accordionExample">
+							  <div class="card">
+								<div class="card-header" id="headingOne">
+								  <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									  3D Scene of Ohio State University Campus using ArcScene
+									</button>
+								  </h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								  <div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/hUmicDPkkdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>
+							  
+							  <div class="card">
+								<div class="card-header" id="headingTwo">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									  3D Animation
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/UVZxreeKg-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						</div>
+						
+						<!-- Cartography Tab -->
+						<div class="tab-pane fade" id="cartography">
+							<div class="accordion" id="accordionExample">
+							
+							<!-- First Card -->
+							  <div class="card">
+								<div class="card-header" id="headingOne">
+								  <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									  Urban Development of Delaware County, Ohio
+									</button>
+								  </h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/NesterovFinalProject.pdf' %}#view=fit"></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>
+							  
+							<!-- Second Card -->
+							  <div class="card">
+								<div class="card-header" id="headingTwo">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									  Replication of an Historic Map in ArcGIS
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/FinalLayout.pdf' %}#view=fit"></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>		
+							  
+							<!-- Third Card -->
+							  <div class="card">
+								<div class="card-header" id="headingThree">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									  Cities of Franklin County, Ohio
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/citiesOfFranklinOhio.pdf' %}#view=fit"></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>		
+							  
+							<!-- Fourth Card -->
+							  <div class="card">
+								<div class="card-header" id="headingFour">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									  Data Classification Methods
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/dataClassification.pdf' %}#view=fit"></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>
+							  
+							<!-- Fifth Card -->
+							  <div class="card">
+								<div class="card-header" id="headingFive">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									  Measurements of Ohio
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/measurementsOhio.pdf' %}#view=fit"></iframe>
+										</div>
+									</div>
+								</div>
+							  </div>  
+							  
+							<!-- Sixth Card -->
+							  <div class="card">
+								<div class="card-header" id="headingSix">
+								  <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									  Map of South Carolina
+									</button>
+								  </h5>
+								</div>
+								<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="{% static 'projects/southCaro.pdf' %}#view=fit"></iframe>
+										</div>	
+									</div>
+								</div>
+							  </div>
+								
+							</div>
+						</div>
+						
+						<!-- Programming Tab -->
+						<div class="tab-pane fade" id="programming">
+							<h4 class="mt-2">City Population Growth in United States</h4>
+								<p> 
+									<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="US Population Growth" src="//www.arcgis.com/apps/Embed/index.html?webmap=df02f07c31dc42a782992f2b6ece2b4f&extent=-127.5773,20.2321,-62.6701,50.325&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div>
+								</p>
+							
+							<h4 class="mt-2">Recent Global Earthquakes</h4>
+								<p> 
+									<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Recent Earthquakes" src="//www.arcgis.com/apps/Embed/index.html?webmap=5131008d72024c08861c181137eb2f34&extent=-180,-43.651,14.8853,70.9852&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div>
+								</p>
+								
+							<h4 class="mt-2">Schools With a Population Over 4000</h4>
+								<p> 
+									<iframe width="1080" height="720" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/H9j8C"></iframe>
+								</p>
+								
+							<h4 class="mt-2">Tour of Bali</h4>
+								<p> 
+									https://www.arcgis.com/apps/MapTour/index.html?appid=cf8d62dd9dfb4dcfa61206063104b392
+								</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

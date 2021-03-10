@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander Nesterov</title>
+		<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body style="background-color:#6495ED;">
+		<div class="container">
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="{% url 'home' %}">Welcome!</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+							  <li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="{% url 'projects' %}">Projects</a>
+							  </li>
+							</ul>
+						</div>
+				</nav>
+			
+				<hr>
+				
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card card-body h-100 border-info" id="profile-wrapper">
+							<img src="{% static 'images/me.jpg' %}" alt="me" class="img-thumbnail">
+							<hr>
+							<h4>Alexander Nesterov</h4>
+							<ul class="social-links">
+								<li><a href="https://www.facebook.com/Alex.fenton17/"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
+								<li><a href="https://www.linkedin.com/in/alexander-nesterov-878bb110b/"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+								<li><a href="https://www.instagram.com/alexnesterov17/"><img class="social" src="{% static 'images/instagram.png' %}"></a></li>
+								<li><a href=mailto:alexfenton17@gmail.com><img class="social" src="{% static 'images/email.png' %}"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

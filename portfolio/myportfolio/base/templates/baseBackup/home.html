@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander Nesterov</title>
+		<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body style="background-color:#6495ED;">
+		<div class="container">
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="{% url 'home' %}">Welcome!</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+							  <li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="{% url 'projects' %}">Projects</a>
+							  </li>
+							</ul>
+						</div>
+				</nav>
+			
+				<hr>
+			
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card card-body h-100 border-info" id="profile-wrapper">
+							<img src="{% static 'images/me.jpg' %}" alt="me" class="img-thumbnail">
+							<hr>
+							<h4>Alexander Nesterov</h4>
+							<ul class="social-links">
+								<li><a href="https://www.facebook.com/Alex.fenton17/"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
+								<li><a href="https://www.linkedin.com/in/alexander-nesterov-878bb110b/"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+								<li><a href="https://www.instagram.com/alexnesterov17/"><img class="social" src="{% static 'images/instagram.png' %}"></a></li>
+								<li><a href=mailto:alexfenton17@gmail.com><img class="social" src="{% static 'images/email.png' %}"></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-9">
+						<div class="card card-body h-100 border-info">
+							<h4>Welcome to my page!</h4>
+							<hr>
+							<p>Hello! I'm a recent graduate from The Ohio State University and currently looking to start my career working 
+							with geographic information systems and doing what I can to work on projects that will improve the quality of 
+							life for other people and increase efficiency of new or current programs. I created this page to add onto my 
+							resume for an easy viewing of projects and labs I've worked on during my time in college.</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<div class= "row">
+					<div class= "col">
+						<div class="col-md-14">
+							<div class="card card-body h-100">
+								<h5>About Myself</h5>
+								<hr>
+								<p>I started college pursuing a degree in computer and information science but once I discovered
+								geographic information science I immediately made the switch. Ever since then I graduated in the autumn
+								of 2020 from The Ohio State University. Some personal hobbies of mine are playing soccer, Dungeons and Dragons,
+								and taking care of my plants. I was a member of the Ohio State Soccer Indoor Club. Currently, I am looking for GIS Developer, 
+								Analyst, or Internship opportunities. I am constantly looking for more ways to improve and learn. 
+								I want to do what I can to further better myself in this career.</p>
+							</div>
+						</div>
+						
+						<br>
+						
+						<div class="card card-body h-60">
+							<h5>How I Learn</h5>
+							<hr>
+							<p>Visual learning is what works best for me. I learn the most when I am able to finish a simple project and then
+							build on top of something that works. I like to visualize what I am learning as well, so if I am able to test
+							different outputs, I will be able to figure out how to solve it.</p>
+						</div>
+					</div>
+				
+					<div class="col-md-6">
+						<div class="card card-body h-100">
+							<h5>What I Know</h5>
+							<hr>
+							<p>In ArcGIS and QGIS, I am able to:
+								<ul>
+								  <li>• Use ModelBuilder for automating raster and vector-based suitability for performing analysis.</li>
+								  <li>• Create triangular irregular networks</li>
+								  <li>• Generate watersheds, viewsheds, hillshades, and hypsometric tintings</li>
+								  <li>• Prepare datasets in Excel for importing into ArcGIS Pro.</li>
+								  <li>• Download and join data from different US Census Bureau sources.</li>
+								  <li>• And much more...</li>
+								</ul> 
+							</p>
+								
+							<p>In GIS Development I have written programs that can:
+								<ul>
+								  <li>• Create, search, and index balanced and unbalanced k-D trees and point quadtrees.</li>
+								  <li>• Prepare U.S. county shapefiles and transform the coordinates to an equal area projection and compute the size.</li>
+								  <li>• Working with GeoJSON and Shapex, such as retrieving features from shapefiles and generating points within the boundaries.</li>
+								</ul> 
+							</p>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<br>
+	</body>
+</html>
